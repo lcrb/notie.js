@@ -764,6 +764,9 @@ var notie = function(){
     }
     
     function dismissAlert(callback) {
+        clearTimeout(alert_timeout_1);
+        clearTimeout(alert_timeout_2);
+
         alert_hide(callback);
     }
     
